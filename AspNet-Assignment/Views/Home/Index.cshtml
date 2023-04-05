@@ -1,0 +1,11 @@
+﻿<div class="container mt-5">
+    @if(SignInManager.IsSignedIn(User))
+    {
+        <div>Welcome @User.Identity?.Name</div>
+        <a asp-action="Index" asp-controller="Logout">Logout</a>
+    }
+    else
+    {
+        <a asp-action="Index" asp-controller="register">Click here to register/login</a>
+    }
+</div>

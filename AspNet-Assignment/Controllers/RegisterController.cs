@@ -26,6 +26,7 @@ namespace AspNet_Assignment.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 CustomIdentityUser customIdentityUser = registerViewModel;
 
                 var registationResult = await _userManager.CreateAsync(customIdentityUser, registerViewModel.Password);

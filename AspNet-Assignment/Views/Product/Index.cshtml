@@ -1,0 +1,28 @@
+﻿@model ProductViewModel
+
+<h1>Hej bror</h1>
+
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <form method="post" class="col-6" novalidate>
+
+            <div class="mb-3">
+                <label asp-for="ProductName" class="form-label"></label>
+                <input asp-for="ProductName" class="form-controll"/>
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label"></label>
+                <input asp-for="Price" class="form-controll"/>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">Add Product</button>
+            </div>
+        </form>
+    </div>
+
+</div>

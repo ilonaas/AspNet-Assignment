@@ -1,4 +1,5 @@
-﻿using AspNet_Assignment.Models.Identity;
+﻿using AspNet_Assignment.Models;
+using AspNet_Assignment.Models.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,4 +11,5 @@ namespace AspNet_Assignment.Contexts
         {
         }
     }
+
 }

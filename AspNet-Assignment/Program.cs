@@ -1,5 +1,6 @@
 using AspNet_Assignment.Contexts;
 using AspNet_Assignment.Models.Identity;
+using AspNet_Assignment.Service;
 using AspNet_Assignment.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<IdentityContext>(x =>
 
 builder.Services.AddScoped<LoginViewModel>();
 builder.Services.AddScoped<RegisterViewModel>();
+builder.Services.AddScoped<ProductService>();
 
 builder.Services.AddDefaultIdentity<CustomIdentityUser>(x =>
 {

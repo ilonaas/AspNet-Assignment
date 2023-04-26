@@ -4,8 +4,7 @@ namespace AspNet_Assignment.Models.Products
 {
     public class ProductEntity
     {
-        [Key]
-        public string SKU { get; set; } = null!;
+        public int Id { get; set; }
         public string ProductName { get; set; } = null!;
         public string Price { get; set; } = null!;
         public string? ImageUrl { get; set; }

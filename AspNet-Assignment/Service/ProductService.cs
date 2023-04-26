@@ -1,6 +1,5 @@
 ﻿using AspNet_Assignment.Contexts;
 using AspNet_Assignment.Models.Products;
-using AspNetCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

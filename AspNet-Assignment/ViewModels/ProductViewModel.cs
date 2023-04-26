@@ -11,6 +11,7 @@ namespace AspNet_Assignment.ViewModels
 
         [Display(Name = "Price")]
         [Required(ErrorMessage = "You must enter a price")]
-        public string Price { get; set; }
+        public string Price { get; set; } = null!;
+
     }
 }

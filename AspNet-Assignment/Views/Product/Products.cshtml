@@ -1,0 +1,12 @@
+﻿@using AspNet_Assignment.Models.Products
+@model IEnumerable<ProductEntity>
+
+<h1>tjena bror</h1>
+
+<div>
+    @foreach(var product in Model)
+    {
+        <div>@product.ProductName, @product.Price</div>
+    }
+
+</div>
